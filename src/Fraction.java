@@ -25,9 +25,6 @@ public class Fraction {
 
         Fraction fraction = (Fraction) o;
 
-        if (numerator == fraction.numerator && denominator == fraction.denominator)
-            return true;
-
-        return (numerator / denominator) == (fraction.numerator / fraction.denominator);
+        return ((double)numerator / (double)denominator) == ((double)fraction.numerator / (double)fraction.denominator);
     }
 }
